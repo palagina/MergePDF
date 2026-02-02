@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger - Merge PDFs Locally</title>
+    <link rel="stylesheet" href="pdf_merger.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Merger</h1>
+        <p class="subtitle">Merge multiple PDFs locally • No internet • No data sharing</p>
+
+        <div class="section">
+            <div class="section-title">Select PDF Files</div>
+            <div class="file-input-wrapper">
+                <input type="file" id="pdfInput" accept=".pdf" multiple>
+                <button class="file-button" onclick="document.getElementById('pdfInput').click()">
+                    Add PDF Files
+                </button>
+            </div>
+            <div id="fileList" class="file-list empty">No files selected</div>
+            <div class="controls">
+                <button class="btn-small" onclick="clearFiles()">Clear All</button>
+            </div>
+        </div>
+
+        <div class="section" id="outputSection" style="display: none;">
+            <div class="section-title">Output File Name</div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <input 
+                    type="text" 
+                    id="outputName" 
+                    class="output-name" 
+                    value="merged.pdf" 
+                    placeholder="Enter output filename"
+                    oninput="manualFilenameEdit = true"
+                    style="flex: 1;"
+                >
+                <button class="btn-small" onclick="resetFilename()" title="Reset to auto-generated name" style="flex: none; min-width: 80px;">Reset</button>
+            </div>
+        </div>
+
+        <button class="merge-button" onclick="mergePDFs()" id="mergeBtn">
+            Merge PDFs
+        </button>
+
+        <div id="status" class="status"></div>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="footer">
+            <img src="limbo-tools-logo.png" alt="Created by Limbo Tools" class="footer-logo">
+            <span class="badge">v1.0</span>
+        </div>
+    </div>
+
+    <script src="pdf-lib.min.js"></script>
+    <script src="pdf_merger.js"></script>
+</body>
+</html>

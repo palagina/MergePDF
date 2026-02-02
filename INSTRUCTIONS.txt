@@ -1,0 +1,20 @@
+📄 PDF Merger - How to Use
+
+**STEP 1: Open the app**
+• Double-click "Merge PDF.command"
+
+**STEP 2: If you see a security warning**
+• Right-click (or Control+click) "Merge PDF.command"  
+• Choose "Open"
+• Click "Open" again in the popup
+
+(This only happens the first time!)
+
+**STEP 3: Merge your PDFs**
+• Choose your PDF files
+• Arrange them in order
+• Click "Merge PDFs"
+• Done! Your merged file downloads automatically
+
+✨ Works completely offline
+🔒 Nothing is uploaded anywhere
