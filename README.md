@@ -6,6 +6,12 @@ A simple, privacy-focused tool to merge PDF files locally on your computer. **10
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## 🌐 Try it Online
+
+**https://palagina.github.io/MergePDF/**
+
+No installation needed - just open and use!
+
 ## ✨ Features
 
 - ✅ **Merge unlimited PDFs** locally on your computer
